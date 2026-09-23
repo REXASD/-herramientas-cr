@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+
+export const metadata: Metadata = { title: "Términos y condiciones", description: "Términos de uso de HerramientasCR.", alternates: { canonical: "/terminos" } };
+
+export default function Page() {
+  return <div className="container page legal-page"><Breadcrumbs items={[{ label: "Términos" }]} /><article className="content-card longform"><h1>Términos y condiciones</h1><p className="article-meta">Última actualización: 22 de septiembre de 2026</p><h2>1. Uso informativo</h2><p>Las calculadoras, guías y resultados tienen fines informativos y de referencia. No constituyen asesoría legal, contable, tributaria, financiera ni laboral.</p><h2>2. Exactitud y actualización</h2><p>Buscamos utilizar fórmulas y fuentes confiables, pero normas, tasas, tarifas y circunstancias particulares pueden cambiar. Verifica la información relevante antes de realizar un trámite o tomar una decisión importante.</p><h2>3. Datos introducidos</h2><p>El usuario es responsable de la exactitud de los valores que introduce. Un dato incorrecto puede producir un resultado incorrecto.</p><h2>4. Servicios externos</h2><p>Los enlaces y servicios de terceros se rigen por sus propios términos y políticas.</p><h2>5. Disponibilidad</h2><p>El sitio puede modificar herramientas, corregir fórmulas, añadir contenido o suspender temporalmente funciones por mantenimiento.</p><h2>6. Propiedad del contenido</h2><p>El diseño, código y contenido original del proyecto pertenecen a sus respectivos titulares. Las marcas y materiales externos conservan sus derechos correspondientes.</p></article></div>;
+}

@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <div className="container page not-found"><span className="badge">404</span><h1>Esta página no existe.</h1><p className="lead">Puede que la dirección haya cambiado o que el enlace sea incorrecto.</p><div className="actions"><Link className="btn btn-primary" href="/">Volver al inicio</Link><Link className="btn btn-secondary" href="/#herramientas">Ver herramientas</Link></div></div>}
